@@ -11,7 +11,7 @@
       "",
     ]
   },
-	
+
 	"VueJS Component Template": {
 		"prefix": "componentTemplate",
 		"body": [
@@ -20,13 +20,12 @@
 			"</template>",
 			"",
 			"<script lang=\"ts\">",
-			"import { defineComponent } from 'vue'",
+			"import Vue from 'vue'",
 			"",
-			"export default defineComponent({})",
+			"export default Vue.extend({})",
 			"</script>",
 			"",
 			"<style lang=\"scss\" scoped>",
-			"${1:TAG_NAME} {}",
 			"",
 			"</style>",
 		]
@@ -51,5 +50,5 @@
 			"}",
 		]
 	},
-	
+
 }
