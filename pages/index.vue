@@ -2,6 +2,10 @@
   <section>
     <h1>{{ title }}</h1>
     <h3>{{ content }}</h3>
+    <div class="count">
+      {{ $count }}
+      <button @click="increment">Increment</button>
+    </div>
   </section>
 </template>
 
@@ -22,7 +26,7 @@ export default Vue.extend({
     const title = 'Hello Nuxt'
     const content = 'Nuxt Content'
 
-    console.log('async SSR return', books.books)
+    console.log('async SSR return')
 
     return { title, content }
   },
@@ -40,12 +44,16 @@ export default Vue.extend({
     }
   },
 
-  async created() {
-
+  computed:{
+    $count() {
+      return books.$count
+    }
   },
 
-  mounted() {
-    // this.$axios.$get('/post')
+  methods: {
+    increment() {
+      books.increment(1)
+    }
   }
 })
 </script>
