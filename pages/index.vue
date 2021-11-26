@@ -21,7 +21,7 @@ export default Vue.extend({
     const title = 'Hello Nuxt'
     const content = 'Nuxt Content'
 
-    console.log('async return')
+    console.log('async SSR return')
 
     return { title, content }
   },
