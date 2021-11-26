@@ -28,6 +28,8 @@ export default Vue.extend({
 
     console.log('async SSR return')
 
+    books.index()
+
     return { title, content }
   },
 
