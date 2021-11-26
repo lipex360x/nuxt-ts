@@ -7,6 +7,7 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import { books } from '@/store'
 
 function sleep(time: number) {
   return new Promise((resolve) => setTimeout(resolve, time))
@@ -21,7 +22,7 @@ export default Vue.extend({
     const title = 'Hello Nuxt'
     const content = 'Nuxt Content'
 
-    console.log('async SSR return')
+    console.log('async SSR return', books.books)
 
     return { title, content }
   },
