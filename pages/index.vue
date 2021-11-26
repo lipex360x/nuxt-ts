@@ -1,12 +1,10 @@
 <template>
-  <ul>
-    <NuxtLink to="/">home</NuxtLink>
-    <NuxtLink to="/about">about</NuxtLink>
-  </ul>
+  <h1>Home</h1>
 </template>
 
-<style scoped>
-a.nuxt-link-exact-active {
-  font-weight: bold
-}
-</style>
+<script lang="ts">
+import Vue from 'vue'
+export default Vue.extend({
+  layout: 'website'
+})
+</script>
