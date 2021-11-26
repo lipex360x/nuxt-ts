@@ -5,6 +5,9 @@
 <script lang="ts">
 import Vue from 'vue'
 export default Vue.extend({
-  layout: 'website'
+  layout: 'website',
+  mounted() {
+    // this.$axios.$get('/post')
+  }
 })
 </script>

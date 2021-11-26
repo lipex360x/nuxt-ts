@@ -51,4 +51,13 @@
 		]
 	},
 
+  "VueJS Mounted Template": {
+		"prefix": "mountedTemplate",
+		"body": [
+			"mounted() {",
+			"  return true",
+			"}",
+		]
+	},
+
 }
